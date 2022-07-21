@@ -5,12 +5,12 @@ const bread = require('../models/bread.js')
 
 breads.get("/",(req,res)=>{
   res.render('index',
-  {
-    breads:bread,
-    title:'Index Page';
-  }
+    {
+      breads:bread,
+      title:'Index Page'
+    }
   )
-  res.send(bread)
+  //res.send(bread)
 })
 // SHOW
 breads.get('/:arrayIndex', (req, res) => {
