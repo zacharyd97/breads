@@ -1,8 +1,7 @@
 const React = require('react')
-const breads = require('../controllers/breads_controller')
 const Default = require('./layouts/Default')
 
-function show ({bread}) {
+function show ({bread}, index) {
     console.log("bread inside show",bread)
     return (
         <Default>
@@ -19,6 +18,10 @@ function show ({bread}) {
   <img src={bread.image} alt={bread.name} />
   <li><a href="/breads">Go home</a></li>
   
+    <form action={`/breads/${index}?_method=DELETE`} method="POST">
+      <input type='submit' value="DELETE"/>
+    </form>
+
 </Default>
     
     )
