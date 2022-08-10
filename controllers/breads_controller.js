@@ -19,12 +19,13 @@ breads.get('/', async (req, res) => {
 
 // NEW
 breads.get('/new', (req, res) => {
-  Baker.find()
-    .then(foundBakers => {
-      res.render('new', {
-        bakers: foundBakers
-      })
-    })
+  // Baker.find()
+  //   .then(foundBakers => {
+  //     res.render('new', {
+  //       bakers: foundBakers
+  //     })
+  //   })
+  res.send('hello world new')
 })
 
 // SHOW
