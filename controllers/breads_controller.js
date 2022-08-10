@@ -25,7 +25,7 @@ breads.get('/new', (req, res) => {
         bakers: foundBakers
       })
     })
-  res.send('hello world new')
+  // res.send('hello world new')
 })
 
 // SHOW
