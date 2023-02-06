@@ -32,5 +32,3 @@ module.exports = [
   ]
 
 
-  //http://localhost:3000/bakers/data/seed 
-  //to add more seed data
